@@ -20,5 +20,5 @@
       - S3
   tasks:
   - name: print the course information
-    anisible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hi, I am learning {{ course }}, with duration: {{ duration }}, topics are: {{ topics }} and live: {{ live }}, tools are: {{ tools }}"
