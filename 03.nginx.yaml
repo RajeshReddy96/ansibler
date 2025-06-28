@@ -13,13 +13,13 @@
       state: started
       enabled: yes
 
-  - name: mysql install
-    ansible.builtin.package:
-      name: mysqld
-      state: present
+  # - name: mysql install
+  #   ansible.builtin.package:
+  #     name: mysql
+  #     state: present
 
-  - name: run mysql
-    ansible.builtin.service:
-      name: mysqld
-      state: started
-      enabled: yes
+  # - name: run mysql
+  #   ansible.builtin.service:
+  #     name: mysql
+  #     state: started
+  #     enabled: yes
