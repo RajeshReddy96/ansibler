@@ -1,5 +1,6 @@
 - name: devops course information
   hosts: local
+  connection: local
   vars:
     course: "Devops with AWS"
     duration: 120
@@ -19,5 +20,5 @@
       - S3
   tasks:
   - name: print the course information
-    anisble.builtin.debug:
+    anisible.builtin.debug:
       msg: "Hi, I am learning {{ COURSE }}, with duration: {{ DURATION }}, topics are: {{ topics }} and live: {{ live }}, tools are: {{ tools }}"
