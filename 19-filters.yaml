@@ -17,3 +17,12 @@
       greeting: "Hello Teju"
     ansible.builtin.debug:
       msg: "{{ greeting | lower }}"
+
+  - name: convert to list
+    vars:
+      course:
+        name: DevOps
+        duration: 120
+        trainer: Rajesh
+    ansible.buitltin.debug:
+      msg: "{{ course | dict2items }}"
