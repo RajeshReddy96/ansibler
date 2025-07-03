@@ -21,8 +21,8 @@
   - name: convert to list
     vars:
       course:
-        name: DevOps
+        name: "DevOps"
         duration: 120
-        trainer: Rajesh
-    ansible.buitltin.debug:
+        trainer: "Rajesh"
+    ansible.builtin.debug:
       msg: "{{ course | dict2items }}"
